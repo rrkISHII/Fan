@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+
+.top-screen {
+  height: 75vh;
+  background-color: #ffaaa5;
+    display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-buttons {
+  height: 25vh;
+  background-color: #698474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 56, 86);
+  transition: all 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.x {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(215, 215, 215) 0px 10px 0px 0px;
+}
+
+.y:active {
+  background-color: rgb(255, 56, 86);
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.x:active {
+  background-color:white;
+  box-shadow:  white;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.x.clicked {
+  background-color: rgb(240, 240, 240); 
+  box-shadow: rgb(180, 180, 180) 0px 3px 0px 0px, 
+              inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transform: translateY(5px);
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fan-image {
+  width: 290px;
+  height: 290px;
+  z-index: 1;
+  position: absolute;
+}
+.fan-top {
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+    position: absolute;
+}
+.fan-bot {
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+    position: absolute;
+}
+
+
+.fan-image.speed-1 {
+  animation: spin 0.9s linear infinite; /* dariell */
+}
+
+.fan-image.speed-2 {
+  animation: spin 0.5s linear infinite; /* mark */
+}
+
+.fan-image.speed-3 {
+  animation: spin 0.3s linear infinite; /* dave */
+}
+/* .space{
+    padding: 10px ;
+    border: 2px solid black;
+    border-radius: 10px;
+} */
