@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         2: new Audio('speed2.mp3'),
         3: new Audio('speed3.mp3')
     };
-    let clicky= new Audio('../audio/clicky.mp3');
+    let clicky= new Audio('clicky.mp3');
 
     // object para sa loop ng sounds
     // check mo voices nila
