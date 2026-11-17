@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fan.css">
-    <title>Document</title>
+    <title>Fan Control</title>
 </head>
 <body>
     <div class="top-screen">
-        <img src="fan-top.png" alt="Fan" class="fan-top">
-        <img src="fan-mid.png" alt="Fan" class="fan-image">
-        <img src="fan-bot.png" alt="Fan" class="fan-bot">
+        <img src="fan-top.png" alt="Fan top" class="fan-top">
+        <img src="fan-mid.png" alt="Fan blades" class="fan-image">
+        <img src="fan-bot.png" alt="Fan base" class="fan-bot">
     </div>
 
-  
-    <div class="bottom-buttons clicked">
+    <div class="bottom-buttons">
         <div class="space">
-        <button class="y"></button>
-        <button class="x"></button>
-        <button class="x"></button>
-        <button class="x"></button>
+            <button type="button" class="y" aria-label="Turn fan off"></button>
+            <button type="button" class="x" aria-label="Set fan speed 1"></button>
+            <button type="button" class="x" aria-label="Set fan speed 2"></button>
+            <button type="button" class="x" aria-label="Set fan speed 3"></button>
         </div>
     </div>
+
+    <script src="fan.js"></script>
 </body>
 </html>
-<script src="fan.js"></script>
