@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // variables para sa sound files
     let fanSounds = {
-        1: new Audio('../audio/speed1.mp3'),
-        2: new Audio('../audio/speed2.mp3'),
-        3: new Audio('../audio/speed3.mp3')
+        1: new Audio('speed1.mp3'),
+        2: new Audio('speed2.mp3'),
+        3: new Audio('speed3.mp3')
     };
     let clicky= new Audio('../audio/clicky.mp3');
 
